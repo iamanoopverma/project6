@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: lightsteelblue;
+            margin: 0px;
+        }
+
+        #top-bar {
+            background-color: rgb(65, 219, 168);
+            position: fixed;
+            height: 45px;
+            width: 100%;
+        }
+
+        #top-bar a {
+            text-decoration: none;
+            color: darkgreen;
+            padding:35px;
+        }
+        #top-bar-items{
+            position:relative;
+            top:12px;
+        }
+        #intro {
+            position: relative;
+            top: 267px;
+            left: 100px;
+            width: 1000px;
+        }
+
+        #intro h1 {
+            font-size: 62px;
+            margin: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(181, 94, 94);
+        }
+
+        .paragraphs {
+            margin: 0px;
+            font-size: 30px;
+            color: rgb(176, 144, 84);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #p1 {
+            position: relative;
+            left: 12px;
+            top: 12px;
+
+        }
+
+        #p2 {
+            position: relative;
+            left: 2px;
+            bottom: 1px;
+        }
+
+        #photo {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            bottom: 120px;
+            left: 900px;
+        }
+
+        #photo img {
+            border: 8px solid rgb(137, 78, 88);
+            border-radius: 150px;
+        }
+
+        #skill {
+            position: relative;
+            left: 150px;
+            top: 400px;
+            width: 600px;
+
+        }
+
+        #skill h1 {
+            color: rgb(52, 52, 201);
+        }
+
+        #skill h3 {
+            color: rgb(21, 133, 41);
+        }
+
+        #table {
+            position: relative;
+            left: 150px;
+            top: 450px;
+            width: 600px;
+        }
+
+        #table h1 {
+            margin: 0px;
+            color: rgb(52, 52, 201);
+        }
+
+        #table table {
+            margin-top: 30px;
+            width: 500px;
+
+        }
+
+        #table a {
+            text-decoration: none;
+        }
+
+        #experience {
+            position: relative;
+            left: 150px;
+            top: 500px;
+            width: 600px;
+        }
+
+        #experience h1 {
+            color: rgb(52, 52, 201);
+        }
+
+        #education {
+            position: relative;
+            left: 150px;
+            top: 550px;
+            width: 600px;
+        }
+
+        #education h1 {
+            color: rgb(52, 52, 201);
+        }
+
+        #contact {
+            position: relative;
+            left: 150px;
+            top: 600px;
+            width: 690px;
+        }
+
+        #contact h1 {
+            color: rgb(52, 52, 201);
+        }
+
+        #contact img {
+            height: 35px;
+            width: 35px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="top-bar">
+            <div id="top-bar-items">
+            <a href="#photo">Home</a>
+            <a href="#skill">Skills</a>
+            <a href="#table">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </div>
+        </div>
+    </header>
+    <div id="intro">
+        <p class="paragraphs" id="p1">My Name is</p>
+        <h1>Anoop Verma|</h1>
+        <p class="paragraphs" id="p2">and I'm a web developer.I'm <br> from Akbarpur U.P. INDIA.</p>
+    </div>
+    <div id="photo">
+        <img src="myphoto.png" alt="My photo">
+    </div>
+    <div id="skill">
+        <h1><u>Skill & Experties</u></h1>
+        <h3>Langugaes:</h3>
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>DSA</li>
+            <li>STL</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+        <h3>Experties:</h3>
+        <ul>
+            <li>Good knowledge of Windows and Microsoft Office.</li>
+            <li>I have fundamental understanding of computing, be fluent in a programming language, and have excellent
+                debugging and problem-solving skills.</li>
+            <li>I have good attention to detail, communication skills, and interpersonal skills.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, doloremque.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto beatae iure consequuntur molestiae
+                et.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa voluptatum quam!</li>
+        </ul>
+    </div>
+    <div id="table">
+        <h1><u>Projects</u></h1>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Title</th>
+                    <th>GitHub Repo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Textual Elegance</td>
+                    <td>Play with Text</td>
+                    <td><a href="https://github.com/iamanoopverma/project1.git">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>Student's Marksheet</td>
+                    <td>Bright Your Future</td>
+                    <td><a href="https://github.com/iamanoopverma/project2.git">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>Mysirg Batach Detail</td>
+                    <td>Details Of Courses</td>
+                    <td><a href="https://github.com/iamanoopverma/project3.git">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>MySirg All Batches</td>
+                    <td>Enjoy All Batches</td>
+                    <td><a href="https://github.com/iamanoopverma/Project4.git">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>Customer Feedback</td>
+                    <td>Feedback is very Important</td>
+                    <td><a href="https://github.com/iamanoopverma/project5.git">Link Here</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="experience">
+        <h1><u>Professional Experience</u></h1>
+        <ul>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non!</li>
+            <LI>Lorem ipsum dolor sit amet.</LI>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere voluptatibus illum!</li>
+        </ul>
+    </div>
+    <div id="education">
+        <h1><u>Education</u></h1>
+        <ul>
+            <li>I have passed High School with 68.66% Marks.</li>
+            <li>I have passed Intermidiate with 73% Marks.</li>
+            <li>I have passed in BCA with 82% Marks.</li>
+            <li>I have passed CCC with Grade C.</li>
+            <li>I have completed the C,C++,DSA,STL by MYSIRG.</li>
+        </ul>
+    </div>
+    <div id="contact">
+        <h1><u>Contact Information</u></h1>
+        <a href="https://www.instagram.com"><img src="Instagram.jpeg" alt=""></a>
+        <a href="https://www.facebook.com"><img src="Facebook.jpeg" alt=""></a>
+        <a href="https://www.Linkedin.com"><img src="Linkedin.png" alt=""></a>
+    </div>
+</body>
+
+</html>
