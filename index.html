@@ -8,8 +8,10 @@
     <style>
         body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 19px;
             background-color: lightsteelblue;
             margin: 0px;
+            color: rgb(101, 74, 22);
         }
 
         #top-bar {
@@ -22,12 +24,14 @@
         #top-bar a {
             text-decoration: none;
             color: darkgreen;
-            padding:35px;
+            padding: 35px;
         }
-        #top-bar-items{
-            position:relative;
-            top:12px;
+
+        #top-bar-items {
+            position: relative;
+            top: 12px;
         }
+
         #intro {
             position: relative;
             top: 267px;
@@ -38,7 +42,6 @@
         #intro h1 {
             font-size: 62px;
             margin: 0px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color: rgb(181, 94, 94);
         }
 
@@ -46,7 +49,6 @@
             margin: 0px;
             font-size: 30px;
             color: rgb(176, 144, 84);
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
         #p1 {
@@ -75,37 +77,35 @@
             border-radius: 150px;
         }
 
-        #skill {
+        #skill,
+        #table,
+        #experience,
+        #education,
+        #contact {
             position: relative;
             left: 150px;
-            top: 400px;
-            width: 600px;
-
+            top: 450px;
+            width: 900px;
+            margin-top: 100px;
         }
 
-        #skill h1 {
-            color: rgb(52, 52, 201);
+        .colorh1 {
+            color: rgb(49, 49, 140);
+            font-size: 25px;
+
         }
 
         #skill h3 {
             color: rgb(21, 133, 41);
         }
 
-        #table {
-            position: relative;
-            left: 150px;
-            top: 450px;
-            width: 600px;
-        }
-
-        #table h1 {
-            margin: 0px;
-            color: rgb(52, 52, 201);
+        .margin1 {
+            margin-left: 100px;
         }
 
         #table table {
             margin-top: 30px;
-            width: 500px;
+            width: 650px;
 
         }
 
@@ -113,59 +113,28 @@
             text-decoration: none;
         }
 
-        #experience {
-            position: relative;
-            left: 150px;
-            top: 500px;
-            width: 600px;
-        }
-
-        #experience h1 {
-            color: rgb(52, 52, 201);
-        }
-
-        #education {
-            position: relative;
-            left: 150px;
-            top: 550px;
-            width: 600px;
-        }
-
-        #education h1 {
-            color: rgb(52, 52, 201);
-        }
-
-        #contact {
-            position: relative;
-            left: 150px;
-            top: 600px;
-            width: 690px;
-        }
-
-        #contact h1 {
-            color: rgb(52, 52, 201);
-        }
-
         #contact img {
             height: 35px;
             width: 35px;
-            margin-top: 10px;
-            margin-left: 20px;
+            margin-top: 40px;
+            margin-left: 30px;
+            margin-bottom: 150px;
         }
     </style>
 </head>
 
 <body>
+    <div id="top"></div>
     <header>
         <div id="top-bar">
             <div id="top-bar-items">
-            <a href="#photo">Home</a>
-            <a href="#skill">Skills</a>
-            <a href="#table">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </div>
+                <a href="#top">Home</a>
+                <a href="#skill">Skills</a>
+                <a href="#table">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
     </header>
     <div id="intro">
@@ -176,10 +145,10 @@
     <div id="photo">
         <img src="myphoto.png" alt="My photo">
     </div>
-    <div id="skill">
-        <h1><u>Skill & Experties</u></h1>
-        <h3>Langugaes:</h3>
-        <ul>
+    <div id="skill" class="gap">
+        <h1 class="colorh1"><u>Skill & Experties</u></h1>
+        <h3 class="margin1">Langugaes:</h3>
+        <ul class="margin1">
             <li>C</li>
             <li>C++</li>
             <li>DSA</li>
@@ -188,8 +157,8 @@
             <li>HTML</li>
             <li>CSS</li>
         </ul>
-        <h3>Experties:</h3>
-        <ul>
+        <h3 class="margin1">Experties:</h3>
+        <ul class="margin1">
             <li>Good knowledge of Windows and Microsoft Office.</li>
             <li>I have fundamental understanding of computing, be fluent in a programming language, and have excellent
                 debugging and problem-solving skills.</li>
@@ -200,9 +169,9 @@
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa voluptatum quam!</li>
         </ul>
     </div>
-    <div id="table">
-        <h1><u>Projects</u></h1>
-        <table border="2">
+    <div id="table" class="gap">
+        <h1 class="colorh1"><u>Projects</u></h1>
+        <table border="2" class="margin1">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -239,9 +208,9 @@
             </tbody>
         </table>
     </div>
-    <div id="experience">
-        <h1><u>Professional Experience</u></h1>
-        <ul>
+    <div id="experience" class="gap">
+        <h1 class="colorh1"><u>Professional Experience</u></h1>
+        <ul class="margin1">
             <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non!</li>
@@ -249,9 +218,9 @@
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere voluptatibus illum!</li>
         </ul>
     </div>
-    <div id="education">
-        <h1><u>Education</u></h1>
-        <ul>
+    <div id="education" class="gap">
+        <h1 class="colorh1"><u>Education</u></h1>
+        <ul class="margin1">
             <li>I have passed High School with 68.66% Marks.</li>
             <li>I have passed Intermidiate with 73% Marks.</li>
             <li>I have passed in BCA with 82% Marks.</li>
@@ -259,11 +228,13 @@
             <li>I have completed the C,C++,DSA,STL by MYSIRG.</li>
         </ul>
     </div>
-    <div id="contact">
-        <h1><u>Contact Information</u></h1>
-        <a href="https://www.instagram.com"><img src="Instagram.jpeg" alt=""></a>
-        <a href="https://www.facebook.com"><img src="Facebook.jpeg" alt=""></a>
-        <a href="https://www.Linkedin.com"><img src="Linkedin.png" alt=""></a>
+    <div id="contact" class="gap">
+        <h1 class="colorh1"><u>Contact Information</u></h1>
+        <a href="https://www.instagram.com" class="margin1"><img src="Instagram.jpeg" alt="Instagram"></a>
+        <a href="https://www.facebook.com"><img src="Facebook.jpeg" alt="Facebook"></a>
+        <a href="https://www.Linkedin.com"><img src="Linkedin.png" alt="Linkedin"></a>
+        <a href="https://www.Linkedin.com"><img src="Youtube.jpeg" alt="Youtube"></a>
+        <a href="https://www.github.com"><img src="github.png" alt="github"></a>
     </div>
 </body>
 
